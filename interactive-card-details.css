@@ -217,6 +217,16 @@ label {
     font-size: 18px;
 }
 
+
+.number-input-numbers {
+    width: 50px;
+    height: 100%;
+    box-sizing: border-box;
+    border: none;
+    background: none;
+    outline: none;
+}
+
 .expdate-cvc {
     display: flex;
     gap: 11px;
