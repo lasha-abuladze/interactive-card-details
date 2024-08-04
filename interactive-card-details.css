@@ -217,6 +217,30 @@ label {
     font-size: 18px;
 }
 
+/* .input:focus {
+    border: 1px solid;
+    border-image: linear-gradient(45deg, #6348FE, #610595);
+    border-radius: 8px;
+    border-image-slice: 1;
+} */
+
+.error-border {
+    border: 1px solid #FF5050;
+}
+
+.error-text {
+    display: inline-block;
+    font-size: 12px;
+    font-weight: 500;
+    color: #FF5050;
+    margin-top: 8px;
+    
+    visibility: hidden;
+}
+
+.visible{
+    visibility: visible;
+}
 
 .number-input-numbers {
     width: 50px;
@@ -235,6 +259,10 @@ label {
 .mm-yy {
     display: flex;
     gap: 8px;
+}
+
+.mm-yy span {
+    min-width: 84px;
 }
 
 .cvc-form {
