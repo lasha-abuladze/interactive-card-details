@@ -95,7 +95,31 @@
 
     <form action="#">
 
-        <fieldset> 
+        <div class="after-confirme display-none">
+
+            <svg xmlns="http://www.w3.org/2000/svg" width="80" height="80" viewBox="0 0 80 80" fill="none">
+                <circle cx="40" cy="40" r="40" fill="url(#paint0_linear_0_524)"/>
+                <path d="M28 39.9199L36.0801 48L52.0801 32" stroke="white" stroke-width="3"/>
+                <defs>
+                <linearGradient id="paint0_linear_0_524" x1="-23.0143" y1="11.5071" x2="1.03143e-06" y2="91.5071" gradientUnits="userSpaceOnUse">
+                <stop stop-color="#6348FE"/>
+                <stop offset="1" stop-color="#610595"/>
+                </linearGradient>
+                </defs>
+            </svg>
+
+            <h2>
+                THANK YOU!
+            </h2>
+
+            <p>
+                We’ve added your card details
+            </p>
+
+
+        </div>
+
+        <fieldset class="before-confirme"> 
 
             <div class="cardhoolder-nema-form">
                 <label for="cardholder-name-input">Cardholder Name</label>
@@ -138,8 +162,8 @@
 
         </fieldset>
 
-        <input type="submit" id="submit" class="input" value="Confirm">
-
+        <!-- <input type="submit" id="submit" class="input" value="Confirm"> -->
+        <button id="submit">Confirm</button>
 
     </form>
 

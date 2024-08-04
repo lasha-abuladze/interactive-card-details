@@ -10,6 +10,9 @@ const yearInput = document.querySelector(`#yy`);
 const cvcInput = document.querySelector(`#cvc-input`);
 
 
+const beforeConfirme = document.querySelector(`.before-confirme`)
+const afterConfirm = document.querySelector(`.after-confirme`)
+
 
 
 const cardholderNameCard = document.querySelector(`.cardholder-name-on-card`)
@@ -153,11 +156,16 @@ submitBtn.addEventListener(`click`, (e) => {
     if(inputsArray.some(el => el.classList.contains(`error-border`))) {
 
     } else {
-        cardholderNameCard.textContent = `${cardholderNameInput.value}`;
+        cardholderNameCard.textContent = `${(cardholderNameInput.value).toUpperCase()}`;
         cardNumberCard.textContent = `${cardNumberInput.value}`;
     
         expdateCard.textContent = `${monthInput.value}/${yearInput.value}`
         cvcvCard.textContent = `${cvcInput.value}`
+
+        inputsArray.forEach(el => el.value = ``)
+
+        afterConfirm.classList.remove(`display-none`);
+        beforeConfirme.classList.add(`display-none`);
     }
 
 })
