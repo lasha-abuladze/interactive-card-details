@@ -11,9 +11,8 @@ body {
     width: 100%;
     height: 240px;
     background-color: #21092F;
-    /* overflow: hidden; */
-
-    position: relative;
+    position: absolute;
+    z-index: -1;
 }
 
 .blures {
@@ -40,6 +39,13 @@ body {
     z-index: 1;
 }
 
+.cards-conteiner {
+    max-width: 425px;
+    height: 240px;
+    margin: auto;
+    position: relative;
+}
+
 .card {
     width: 285px;
     height: 156px;
@@ -55,7 +61,7 @@ body {
     z-index: 2;
 
     top: 32px;
-    right: 16px;
+    right: 0;
 }
 
 .black-rectangle {
@@ -100,7 +106,6 @@ body {
     position: absolute;
 
     top: 126px;
-    left: 17px;
     z-index: 3;
 }
 
@@ -178,6 +183,7 @@ body {
 form {
     max-width: 425px;
     padding: 0px 24px 45px 24px;
+    margin: auto;
     margin-top: 90px;
 }
 
@@ -296,6 +302,7 @@ label {
 
 .after-confirme {
     text-align: center;
+    min-width: 381px;
 }
 
 h2 {
@@ -304,6 +311,8 @@ h2 {
     color: #21092F;
     margin-top: 35px;
     margin-bottom: 16px;
+
+    letter-spacing: 3px;
 
 }
 
@@ -314,4 +323,119 @@ h2 {
 }
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media only screen and (min-width: 1220px )  {
+    body {
+        height: 100vh;
+
+        display: flex;
+    }
+
+    .background {
+        width: 483px;
+        height: 100%;
+        background-color: #21092F;
+        position: absolute;
+        z-index: -1;
+    }
+
+    .cards-conteiner {
+
+        min-width: 483px;
+        height: 240px;
+
+        position: absolute;
+        top: 40%;
+        transform: translateY(-50%);
+    }
+
+    
+    form {
+        max-width: 381px;
+        padding: 0px;
+        margin: 0px;
+    
+        position: absolute;
+        left: 60%;
+        top: 40%;
+        transform: translateY(-50%);
+        /* background-color: red; */
+    }
+
+
+    .card {
+        width: 447px;
+        height: 245px;
+        border-radius: 6px;
+    
+        color: #FFFFFF;
+    }
+
+    
+    .silver-card {
+        top: 60%;
+        right: -40%;
+    }
+
+
+    .black-rectangle {
+        height: 54px;
+    }
+
+
+    .cvc-rectagngle {
+        width: 361px;
+        height: 38px;
+    }
+
+    .card-cvc {
+        font-size: 14px;
+        letter-spacing: 2px;
+    }
+
+
+
+    .front-side {
+        top: -60%;
+        right: -20%;
+    }
+
+    .card-details {
+        padding: 0px 32px;
+        box-sizing: border-box;
+    
+        width: 100%;
+    }
+
+
+    .card-number-on-card {
+        font-size: 28px;
+        letter-spacing: 3px;
+    }
+
+    .holder-expdate span {
+        font-size: 14px;
+        letter-spacing: 2px;
+    }
+    
+
+
+}
 
